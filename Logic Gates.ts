@@ -5,8 +5,8 @@
 //% groups='["Logic gates", "Other"]'
 //% block="Logic Gates"
 namespace logicGates {
-    export function FullAdderToSum(a: boolean, b: boolean, c: boolean) {
-        
+    export function FullAdderToSum(a: boolean, b: boolean, cIn: boolean) {
+        return xor(xor(a, b), c)
     }
 }
 /**
