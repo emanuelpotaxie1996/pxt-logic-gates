@@ -5,7 +5,7 @@
 //% groups='["Logic gates", "Other"]'
 //% block="Logic Gates"
 namespace logicGates {
-    /**
+/**
  * NIMPLY gate as a boolean function.
  * @param a input one
  * @param b input two
