@@ -5,8 +5,16 @@
 //% groups='["Logic gates", "Other"]'
 //% block="Logic Gates"
 namespace logicGates {
-    export function FullAdderToSum(a: boolean, b: boolean, carryIn: boolean) {
-        return xor(xor(a, b), carryIn)
+    /**
+ * NIMPLY gate as a boolean function.
+ * @param a input one
+ * @param b input two
+ */
+//% blockNamespace=logicGates
+//% block="$a and not $b" weight=0
+//% group="Other"
+    export function FullAdderToSum(addendA: boolean, addendB: boolean, carryIn: boolean) {
+        return xor(xor(addendA, addendB), carryIn)
     }
 }
 /**
