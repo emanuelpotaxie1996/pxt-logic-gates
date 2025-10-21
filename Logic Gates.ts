@@ -5,16 +5,29 @@
 //% groups='["Logic gates", "Other"]'
 //% block="Logic Gates"
 namespace logicGates {
-/**
- * NIMPLY gate as a boolean function.
- * @param a input one
- * @param b input two
- */
-//% blockNamespace=logicGates
-//% block="$a and not $b" weight=0
-//% group="Other"
-    export function FullAdderToSum(addendA: boolean, addendB: boolean, carryIn: boolean) {
-        return xor(xor(addendA, addendB), carryIn)
+    /**
+     * Full Adder as a boolean function, but it only returns carry-out.
+     * @param a addend one
+     * @param b addend two
+     * @param cIn carry-in
+     */
+    //% blockNamespace=logicGates
+    //% block="add $a to $b with $cIn as carry-in to carry-out fully" weight=0
+    //% group="Other"
+    export function FullAdderToCarryOut(a: boolean, b: boolean, cIn: boolean) {
+        return a !== b && cIn || a && b
+    }
+    /**
+     * Full Adder as a boolean function, but it only returns sum.
+     * @param a addend one
+     * @param b addend two
+     * @param cIn carry-in
+     */
+    //% blockNamespace=logicGates
+    //% block="add $a to $b with $cIn as carry-in to sum fully" weight=1
+    //% group="Other"
+    export function FullAdderToSum(a: boolean, b: boolean, cIn: boolean) {
+        return a !== b !== cIn
     }
 }
 /**
