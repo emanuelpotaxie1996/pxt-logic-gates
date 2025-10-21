@@ -1,0 +1,17 @@
+{
+  "name": "Logic Gates",
+  "version": "0.0.1",
+  "description": "Logic Gates and more for MakeCode",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*"
+  },
+  "files": [
+    "README.md",
+    "Logic Gates.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
