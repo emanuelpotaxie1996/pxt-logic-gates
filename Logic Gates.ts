@@ -1,6 +1,3 @@
-/**
- * Logic gates and more.
- */
 //% color=#10C298 weight=107 icon="\uf1e6"
 //% groups='["Logic gates", "Other"]'
 //% block="Logic Gates"
