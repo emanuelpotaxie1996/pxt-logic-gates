@@ -78,6 +78,7 @@ function xor(a: boolean, b: boolean) {
  */
 //% blockNamespace=logicGates
 //% block="not $a or $b" weight=4
+//% group="Logic gates"
 function nor(a: boolean, b: boolean) {
     return !a && !b
 }
