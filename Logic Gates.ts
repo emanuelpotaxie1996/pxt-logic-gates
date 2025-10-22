@@ -9,7 +9,7 @@ namespace logicGates {
      * @param cIn carry-in
      */
     //% blockNamespace=logicGates
-    //% block="add $a to $b with $cIn as carry-in to carry-out fully" weight=0
+    //% block="add $a to $b with $cIn as carry-in to carry-out" weight=0
     //% group="Other"
     export function FullAdderToCarryOut(a: boolean, b: boolean, cIn: boolean) {
         return a !== b && cIn || a && b
@@ -21,7 +21,7 @@ namespace logicGates {
      * @param cIn carry-in
      */
     //% blockNamespace=logicGates
-    //% block="add $a to $b with $cIn as carry-in to sum fully" weight=1
+    //% block="add $a to $b with $cIn as carry-in to sum" weight=1
     //% group="Other"
     export function FullAdderToSum(a: boolean, b: boolean, cIn: boolean) {
         return a !== b !== cIn
