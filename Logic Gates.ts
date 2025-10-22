@@ -10,7 +10,7 @@ namespace logicGates {
      */
     //% block="add $a to $b with $cIn as carry-in to carry-out" weight=0
     //% group="Other"
-    export function FullAdderToCarryOut(a: boolean, b: boolean, cIn: boolean) {
+    export function FullAdderToCarryOut(a: boolean, b: boolean, cIn: boolean): boolean {
         return a !== b && cIn || a && b
     }
     /**
@@ -21,7 +21,7 @@ namespace logicGates {
      */
     //% block="add $a to $b with $cIn as carry-in to sum" weight=1
     //% group="Other"
-    export function FullAdderToSum(a: boolean, b: boolean, cIn: boolean) {
+    export function FullAdderToSum(a: boolean, b: boolean, cIn: boolean): boolean {
         return a !== b !== cIn
     }
 }
@@ -33,7 +33,7 @@ namespace logicGates {
 //% blockNamespace=logicGates
 //% block="$a and not $b" weight=0
 //% group="Logic gates"
-function nimply(a: boolean, b: boolean) {
+function nimply(a: boolean, b: boolean): boolean {
     return a && !b
 }
 /**
@@ -44,7 +44,7 @@ function nimply(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="$a only if $b" weight=1
 //% group="Logic gates"
-function imply(a: boolean, b: boolean) {
+function imply(a: boolean, b: boolean): boolean {
     return !a || b
 }
 /**
@@ -66,7 +66,7 @@ function xnor(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="$a or $b but not both" weight=3
 //% group="Logic gates"
-function xor(a: boolean, b: boolean) {
+function xor(a: boolean, b: boolean): boolean {
     return a !== b
 }
 /**
@@ -77,7 +77,7 @@ function xor(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="not $a or $b" weight=4
 //% group="Logic gates"
-function nor(a: boolean, b: boolean) {
+function nor(a: boolean, b: boolean): boolean {
     return !a && !b
 }
 /**
@@ -88,7 +88,7 @@ function nor(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="$a or $b" weight=5
 //% group="Logic gates"
-function or(a: boolean, b: boolean) {
+function or(a: boolean, b: boolean): boolean {
     return a || b
 }
 /**
@@ -110,7 +110,7 @@ function nand(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="$a and $b" weight=7
 //% group="Logic gates"
-function and(a: boolean, b: boolean) {
+function and(a: boolean, b: boolean): boolean {
     return a && b
 }
 /**
@@ -120,6 +120,6 @@ function and(a: boolean, b: boolean) {
 //% blockNamespace=logicGates
 //% block="not $a" weight=8
 //% group="Logic gates"
-function not(a: boolean) {
+function not(a: boolean): boolean {
     return !a
 }
