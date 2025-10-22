@@ -1,21 +1,21 @@
 {
-  "name": "Logic Gates",
-  "version": "1.0.4",
-  "description": "Logic Gates and more for MakeCode",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*"
-  },
-  "files": [
-    "README.md",
-    "Logic Gates.ts"
-  ],
-  "public": true,
-  "supportedTargets": [
-    "microbit"
-  ],
-  "targetVersions": {
-    "target": "8.0.16",
-    "pxt": "12.1.8"
-  }
+    "name": "Logic Gates",
+    "version": "1.0.5",
+    "description": "Logic Gates and more for MakeCode",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "Logic Gates.ts"
+    ],
+    "public": true,
+    "supportedTargets": [
+        "microbit"
+    ],
+    "targetVersions": {
+        "target": "8.0.16",
+        "pxt": "12.1.8"
+    }
 }
