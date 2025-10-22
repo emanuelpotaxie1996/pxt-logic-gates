@@ -1,6 +1,6 @@
 {
   "name": "Logic Gates",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Logic Gates and more for MakeCode",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +17,6 @@
   "targetVersions": {
     "target": "8.0.16",
     "pxt": "12.1.8"
-  }
+  },
+  "icon": "https://cdn.makecode.com/blob/d89092d6f61756a7d7d1c362f1bcb0f25d4e5c92/static/libs/radio-broadcast.png"
 }
