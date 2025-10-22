@@ -1,6 +1,6 @@
 {
   "name": "Logic Gates",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Logic Gates and more for MakeCode",
   "license": "MIT",
   "dependencies": {
